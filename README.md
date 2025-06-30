@@ -1,67 +1,38 @@
-## Foundry
+# 🏢 RealEstate Smart Contract
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+A simple real estate decentralized application (dApp) built with Solidity. Users can rent different types of apartments (Studio, One-Bedroom, Two-Bedroom) using Ether, and the contract tracks available, rented, and total apartments. The contract also allows the owner to pause renting, add/remove apartments, and manage active rentals.
 
-Foundry consists of:
+---
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+## 🔧 Features
 
-## Documentation
+- Apartment rental system using Ether
+- Three apartment types:
+  - Studio (1 ETH/year)
+  - One-Bedroom (1.6 ETH/year)
+  - Two-Bedroom (2 ETH/year)
+- Rent duration is fixed at **365 days**
+- Cancel rent with a **10% fee**
+- Admin-only controls to pause/resume rentals and manage listings
+- Event hooks for staking/renting logic
 
-https://book.getfoundry.sh/
+---
 
-## Usage
 
-### Build
 
-```shell
-$ forge build
-```
+## 💸 Pricing
 
-### Test
+| Apartment Type | Cost (ETH/year) |
+|----------------|------------------|
+| Studio         | 1.0 ETH          |
+| One Bedroom    | 1.6 ETH          |
+| Two Bedroom    | 2.0 ETH          |
 
-```shell
-$ forge test
-```
+Cancellation incurs a 10% fee on remaining rent.
 
-### Format
+---
 
-```shell
-$ forge fmt
-```
+## 📜 License
 
-### Gas Snapshots
+This project is licensed under the [MIT License](./LICENSE)
 
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
-# Real-Estate
