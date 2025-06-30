@@ -1,6 +1,6 @@
 # RealEstate Smart Contract
 
-A simple real estate decentralized application (dApp) built with Solidity. Users can rent different types of apartments (Studio, One-Bedroom, Two-Bedroom) using Ether, and the contract tracks available, rented, and total apartments. The contract also allows the owner to pause renting, add/remove apartments, and manage active rentals.
+A simple real estate decentralized application (dApp) built with Solidity. Users can rent different types of apartments (Studio, One-Bedroom, Two-Bedroom) using ETH, and the contract tracks available, rented, and total apartments. The contract also allows the owner to pause renting, add/remove apartments, and manage active rentals.
 
 ---
 
